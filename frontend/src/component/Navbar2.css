@@ -1,0 +1,22 @@
+
+
+.navContainer ul{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    justify-content: space-around;
+    gap: 8vw;
+    bottom: 0;
+    margin-left: -6vw;
+  }
+  .navContainer{
+    width: 100vw;
+    position: fixed;
+    /* left: -4vw; */
+    bottom: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top: 2px solid rgb(2, 83, 115);
+    background-color: aqua;
+  }
+  

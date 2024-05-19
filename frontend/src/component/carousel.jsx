@@ -44,6 +44,8 @@ const NoticeBoard = () => {
   };
 
   return (
+    <>
+    <div className="slider">
     <Slider {...settings}>
       {notices.map((notice) => (
         <div key={notice.id}>
@@ -52,6 +54,8 @@ const NoticeBoard = () => {
         </div>
       ))}
     </Slider>
+    </div>
+    </>
   );
 };
 

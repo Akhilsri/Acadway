@@ -6,26 +6,40 @@ import Navbar from './component/Navbar'
 import LoginPage from './component/LoginPage'
 import HomePage from './component/HomePage'
 import { Router, createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Navbar2 from './component/Navbar2'
+import AttendenceRegister from './component/AttendenceRegister'
+import SplashPage from './component/SplashPage'
 
+import { PrimeReactProvider, PrimeReactContext } from 'primereact/api';
+        
 
 function App() {
   const router = createBrowserRouter([
     {
       path : "/",
-      element : <><HomePage/><Navbar/></>
+      element : <><HomePage/><Navbar2/></>
+    },
+    {
+      path : "/attendence",
+      element : <><AttendenceRegister/><Navbar2/></>
     },
     {
       path : "/login",
-      element : <><Navbar/><LoginPage/></>
+      element : <><SplashPage/><Navbar2/></>
     }
   ])
 
   return (
-    <>
-      {/* <HomePage/> */}
-      {/* <LoginPage/> */}
-      
+    <>  
+   
+      {/* <HomePage/>    */}
+      {/* <LoginPage/ > */}
+      {/* <Navbar/> */}
+      {/* <Navbar2/> */}
+      {/* <AttendenceRegister/> */}
       <RouterProvider router={router}/>
+      {/* <SplashPage/>  */}
+      
     </>
   )
 }
