@@ -29,7 +29,7 @@ const HomePage = () => {
        
        
   
-        
+        <h1>Hii I am Akhil</h1>
     </div>
   
     {/* <NoticeBoard/> */}
